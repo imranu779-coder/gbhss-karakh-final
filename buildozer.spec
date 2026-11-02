@@ -37,3 +37,8 @@ android.entrypoint = org.kivy.android.PythonActivity
 # (str) Full name including package path of the Java class that implements PythonActivity
 # use that one to uncomment
 # android.entrypoint_class = org.kivy.android.PythonActivity
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+android.accept_sdk_license_agreements = True
+android.build_tools_version = 33.0.2
