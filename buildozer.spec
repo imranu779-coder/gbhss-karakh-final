@@ -1,25 +1,22 @@
 [app]
-
-# (str) Title of your application
-title = GBHSS Karkh Final
-
-# (str) Package name
-package.name = gbhsskarkhfinal
-
-# (str) Package domain
-package.domain = org.gbhss.karkh
-
-# (str) Source code where the main.py live
+title = GBHSS KARAKH
+package.name = gbhsskarakhfinal
+package.domain = com.gbhss.karakh
 source.dir = .
-
-# (list) Source files to include
-source.include_exts = py,png,jpg,kv,atlas,json,ttf
-
-# (list) List of inclusions using pattern matching
-source.include_patterns = assets/*,images/*
-
-# (str) Application versioning
+source.include_exts = py,json
 version = 1.0
+requirements = python3,kivy==2.2.0
+orientation = portrait
+fullscreen = 0
 
-# (list) Application requirements
-requirements = python3,kivy==2.3.0,kivymd,requests,urllib3,charset-normalizer,cert
+[buildozer]
+log_level = 2
+warn_on_root = 1
+
+[app:android]
+android.permissions = INTERNET
+android.api = 33
+android.minapi = 21
+android.ndk = 25b
+android.accept_sdk_license_agreements = True
+android.archs = arm64-v8a, armeabi-v7a
